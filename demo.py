@@ -22,10 +22,10 @@ e=xmax[0]
 f=xmax[1]
 g=xmax[2]
 h=xmax[3]
-sepal_length=st.slider("Sepal Length",a,e)
-sepal_width=st.slider("Sepal width",b,f)
-petal_length=st.slider("Petal Length",c,g)
-petal_width=st.slider("Sepal Width",d,h)
+sepal_length=st.slider("Sepal Length",float(a),float(e))
+sepal_width=st.slider("Sepal width",float(b),float(f))
+petal_length=st.slider("Petal Length",float(c),float(g))
+petal_width=st.slider("Sepal Width",float(d),float(h))
 y_pred=model.predict([[sepal_length,sepal_width,petal_length,petal_width]])
 
 op=["Iris-Setosa","Iris-Versicolor","iris-Virginica"]
