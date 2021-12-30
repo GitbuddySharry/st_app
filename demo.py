@@ -13,7 +13,7 @@ model=KNeighborsClassifier(13)
 model.fit(x,y)
 #model.predict([[sepal_length,sepal_width,petal_length,petal_width]])
 xmin=np.min(x,axis=0)
-xmax=np.max(y,axis=0)
+xmax=np.max(x,axis=0)
 a=xmin[0]
 b=xmin[1]
 c=xmin[2]
