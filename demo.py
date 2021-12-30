@@ -9,7 +9,7 @@ var= load_iris()
 # split the data into x and y
 x=var.data
 y=var.target
-model=KNeighborsClassifier(n_neighbours=13)
+model=KNeighborsClassifier(13)
 model.fit(x,y)
 #model.predict([[sepal_length,sepal_width,petal_length,petal_width]])
 xmin=np.min(x,axis=0)
