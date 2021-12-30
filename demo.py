@@ -21,4 +21,5 @@ petal_width=st.slider("Sepal Width",float(xmin[3]),float(xmax[3]))
 y_pred=model.predict([[sepal_length,sepal_width,petal_length,petal_width]])
 
 op=["Iris-Setosa","Iris-Versicolor","iris-Virginica"]
+
 st.title(op[y_pred[0]])
