@@ -2,7 +2,6 @@
 import streamlit as st
 import numpy as np
 st.title("Flower-Type")
-import sklearn
 from sklearn.datasets import load_iris
 from sklearn.neighbors import KNeighborsClassifier
 
